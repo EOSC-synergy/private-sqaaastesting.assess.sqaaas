@@ -1,0 +1,65 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/private-sqaaastesting:
+      branch: main
+      credential_tmp: true
+      repo: https://github.com/PalomoIFCA/private-sqaaastesting
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting git:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-ivory-peccary.sh
+        container: qc.acc_bluesy-pear-wallaby
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-viridian-sponge.sh
+        container: qc.doc_flabby-periwinkle-dachshund
+      github.com/PalomoIFCA/private-sqaaastesting git:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-tangerine-grouse.sh
+        container: qc.doc_gimpy-corn-schnauzer
+      github.com/PalomoIFCA/private-sqaaastesting markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-sapphire-collie.sh
+        container: qc.doc_thirsty-rose-devil
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-indigo-giraffe.sh
+        container: qc.lic_chummy-ruby-neanderthal
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.muzzy-gold-kiwi.sh
+        container: qc.sec_muggy-indigo-coyote
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.seedy-green-dragonfly.sh
+        container: qc.sty_chewy-gold-cassowary
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.boozy-myrtle-emu.sh
+        container: qc.uni_lanky-orange-molly
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/private-sqaaastesting get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.lovely-maroon-terrier.sh
+        container: qc.ver_shabby-mustard-bandicoot
+timeout: 5400
