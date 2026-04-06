@@ -1,8 +1,8 @@
 config:
   credentials:
   - id: https://github.com/PalomoIFCA/private-sqaaastesting
-    password_var: gAAAAABpy9rd4H1rsdSpH4uZaBWbdQjrXryimH37BDzacUDABiQFx5cxNXNgE4DsZRV18SG5AJkhBJhsTwcOUaOyllDKzKCdru7cof-w9t_9ZmXk6kiOFW6PA5zkXkbOuFWwIiLV0b1j
-    username_var: gAAAAABpy9rdXb1JfvBnNuJ2yWVjuR7J4MrhA-Pcqw7w5oSNmy6FjgPcyIZAqPRQovLrrqM_Ct4T7GS7aHJ_lzCdw-G0hmSZ0g==
+    password_var: gAAAAABp01qofPCWGVCwHAJ1TrRU30AX2YV0qTlHtVzPlS3hRPB-RuckGMwc-qwk9fDTBuuZraJVvuOc3yFK6Gt6OwH2o4TK8t741btw0SuLqUzcfPcB-7NImZ7MxiuUXDkpuYYQxSxT
+    username_var: gAAAAABp01qoJ20bIp8GMNQguMGrxf0FbsmSUb8qxkp43mBeorUKP00LAwv-ov-r7hCg5InwnjRvEdJQ5wpoL-HqIgryTXWVIQ==
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: feature/pynblint_fix
@@ -19,50 +19,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-bronze-bombay.sh
-        container: qc.acc_pretty-aqua-mule
+        - /usr/bin/env sh .sqa/script.gloppy-brass-setter.sh
+        container: qc.acc_hazy-saffron-catfish
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-grey-warthog.sh
-        container: qc.doc_ugly-mauve-spider
+        - /usr/bin/env sh .sqa/script.thirsty-cinnamon-quail.sh
+        container: qc.doc_pretty-denim-budgerigar
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-orange-setter.sh
-        container: qc.doc_lanky-amaranth-monkey
+        - /usr/bin/env sh .sqa/script.grumpy-tangerine-hamster.sh
+        container: qc.doc_gummy-copper-barracuda
       github.com/PalomoIFCA/private-sqaaastesting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-sepia-ray.sh
-        container: qc.doc_lumpy-rust-walrus
+        - /usr/bin/env sh .sqa/script.bumpy-jade-chinook.sh
+        container: qc.doc_woozy-sangria-beaver
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-alizarin-opossum.sh
-        container: qc.lic_frumpy-apricot-mist
+        - /usr/bin/env sh .sqa/script.wheezy-dandelion-javanese.sh
+        container: qc.lic_leaky-apricot-akbash
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-cardinal-mastiff.sh
-        container: qc.sec_sleepy-sapphire-capybara
+        - /usr/bin/env sh .sqa/script.grumpy-asparagus-tarantula.sh
+        container: qc.sec_shabby-white-koala
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-magenta-affenpinscher.sh
-        container: qc.sty_muzzy-beige-clam
+        - /usr/bin/env sh .sqa/script.shaky-cyan-beagle.sh
+        container: qc.sty_cozy-cornflower-oriole
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-puce-spitz.sh
-        container: qc.uni_woolly-white-retriever
+        - /usr/bin/env sh .sqa/script.sleepy-orange-shrew.sh
+        container: qc.uni_muggy-ruby-terrier
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-olive-barracuda.sh
-        container: qc.ver_lovely-cornflower-russel
+        - /usr/bin/env sh .sqa/script.jumpy-auburn-hamster.sh
+        container: qc.ver_breezy-pink-heron
 timeout: 5400
