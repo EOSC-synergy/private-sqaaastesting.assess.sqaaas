@@ -22,9 +22,10 @@ pipeline {
             steps {
                 script {
                     projectConfig = pipelineConfig(
-                          configFile: '.sqa/config.yml',
-                          scmConfigs: [ localBranch: true ],
-                          validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0'
+                        configFile: '.sqa/config.yml',
+                        scmConfigs: [ localBranch: true ],
+                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0'
+
                                      )
                     buildStages(projectConfig)
                 }
