@@ -25,7 +25,6 @@ pipeline {
                           configFile: '.sqa/config.yml',
                           scmConfigs: [ localBranch: true ],
                           validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0'
-                          test: 'test',
                                      )
                     buildStages(projectConfig)
                 }
