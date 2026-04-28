@@ -11,7 +11,7 @@ pipeline {
     agent any
 
     stages {
-        stage('SQA potato criterion: QC.Acc & QC.Doc & QC.Lic & QC.Sec & QC.Sty & QC.Uni & QC.Ver') {
+        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Sec & QC.Sty & QC.Uni & QC.Ver') {
             when {
                 anyOf {
                     expression { currentBuild.previousCompletedBuild == null }
@@ -25,7 +25,7 @@ pipeline {
                         configFile: '.sqa/config.yml',
                         scmConfigs: [ localBranch: true ],
                         validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0',
-                        credentialsId: 'potatoes'
+                        credentialsId: 'https://github.com/PalomoIFCA/private-sqaaastesting'
 
                                      )
                     buildStages(projectConfig)
