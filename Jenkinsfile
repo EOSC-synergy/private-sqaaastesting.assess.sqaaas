@@ -24,10 +24,8 @@ pipeline {
                     projectConfig = pipelineConfig(
                         configFile: '.sqa/config.yml',
                         scmConfigs: [ localBranch: true ],
-                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0',
-                        credentialsId: 'https://github.com/PalomoIFCA/private-sqaaastesting'
-
-                                     )
+                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0'
+                    )
                     buildStages(projectConfig)
                 }
             }
