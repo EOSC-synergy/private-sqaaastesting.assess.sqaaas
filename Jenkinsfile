@@ -28,7 +28,6 @@ pipeline {
                         credentialsId: 'https://github.com/PalomoIFCA/private-sqaaastesting'
 
                                      )
-                    echo "DEBUG project_repos: ${projectConfig.config.project_repos}"
                     buildStages(projectConfig)
                 }
             }
