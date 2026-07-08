@@ -10,7 +10,6 @@ config:
     github.com/PalomoIFCA/private-sqaaastesting:
       branch: main
       credential_tmp: true
-      credentials_id: https://github.com/PalomoIFCA/private-sqaaastesting
       repo: https://github.com/PalomoIFCA/private-sqaaastesting
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -20,50 +19,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.malachite_apprehensive_emu.sh
-        container: qc.acc_denim_helpful_hedgehog
+        - /usr/bin/env sh .sqa/script.bluebell_friendly_fox.sh
+        container: qc.acc_snow_sarcastic_seal
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheat_skeptical_whale.sh
-        container: qc.doc_apricot_amused_hawk
+        - /usr/bin/env sh .sqa/script.ice_shy_hawk.sh
+        container: qc.doc_violet_careful_gnu
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.white_proactive_koala.sh
-        container: qc.doc_dahlia_nurturing_dhole
+        - /usr/bin/env sh .sqa/script.champagne_impulsive_mongoose.sh
+        container: qc.doc_orange_playful_beaver
       github.com/PalomoIFCA/private-sqaaastesting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnamon_apprehensive_kookaburra.sh
-        container: qc.doc_ginger_reflective_mandrill
+        - /usr/bin/env sh .sqa/script.celadon_articulate_owl.sh
+        container: qc.doc_lavender_supportive_tortoise
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lavender_lucky_llama.sh
-        container: qc.lic_harlequin_enthusiastic_wolverine
+        - /usr/bin/env sh .sqa/script.wine_reflective_donkey.sh
+        container: qc.lic_yellow_humble_nymph
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.lavender_practical_koala.sh
-        container: qc.sec_aqua_devoted_rhinoceros
+        - /usr/bin/env sh .sqa/script.ceru_dramatic_unicorn.sh
+        container: qc.sec_sapphire_funny_python
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.khaki_delighted_python.sh
-        container: qc.sty_moss_fierce_barracuda
+        - /usr/bin/env sh .sqa/script.puce_unique_parrot.sh
+        container: qc.sty_iris_open_mongoose
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.lime_worried_horse.sh
-        container: qc.uni_marigold_imaginative_armadillo
+        - /usr/bin/env sh .sqa/script.pumpkin_bright_hamster.sh
+        container: qc.uni_cerise_quirky_starfish
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.coral_wondrous_starfish.sh
-        container: qc.ver_azure_curious_quail
+        - /usr/bin/env sh .sqa/script.cream_tenacious_quail.sh
+        container: qc.ver_tangerine_silly_turtle
 timeout: 5400
