@@ -20,50 +20,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.carmine_confused_tarantula.sh
-        container: qc.acc_marigold_helpful_starfish
+        - /usr/bin/env sh .sqa/script.pink_romantic_unicorn.sh
+        container: qc.acc_caramel_respectful_reindeer
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.mustard_eccentric_barracuda.sh
-        container: qc.doc_aqua_vigilant_walrus
+        - /usr/bin/env sh .sqa/script.cadet_brave_giraffe.sh
+        container: qc.doc_steel_driven_hummingbird
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.taupe_melancholy_eagle.sh
-        container: qc.doc_steel_dedicated_albatross
+        - /usr/bin/env sh .sqa/script.lapis_trustworthy_moose.sh
+        container: qc.doc_cinnabar_sincere_puffin
       github.com/PalomoIFCA/private-sqaaastesting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.blush_optimistic_elephant.sh
-        container: qc.doc_royal_motivated_nymph
+        - /usr/bin/env sh .sqa/script.dusk_shrewd_boa.sh
+        container: qc.doc_pansy_intuitive_frog
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ruby_worried_shark.sh
-        container: qc.lic_raspberry_goofy_bat
+        - /usr/bin/env sh .sqa/script.jet_mature_squid.sh
+        container: qc.lic_violet_bubbly_horse
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.orchid_humble_axolotl.sh
-        container: qc.sec_green_thoughtful_manta
+        - /usr/bin/env sh .sqa/script.slate_stubborn_moose.sh
+        container: qc.sec_mustard_devoted_pelican
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.celadon_alert_quokka.sh
-        container: qc.sty_sand_bright_tortoise
+        - /usr/bin/env sh .sqa/script.byzantium_reliable_llama.sh
+        container: qc.sty_pearl_thoughtful_kiwi
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.cardamom_goofy_coyote.sh
-        container: qc.uni_eggplant_devoted_anaconda
+        - /usr/bin/env sh .sqa/script.jet_delighted_hippopotamus.sh
+        container: qc.uni_reef_humorous_gnu
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sienna_reflective_termite.sh
-        container: qc.ver_cream_amiable_boa
+        - /usr/bin/env sh .sqa/script.tangerine_alert_mongoose.sh
+        container: qc.ver_butterscotch_grateful_emu
 timeout: 5400
