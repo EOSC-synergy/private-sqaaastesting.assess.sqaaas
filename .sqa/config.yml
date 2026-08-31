@@ -20,46 +20,46 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.mango_mischievous_toucan.sh
-        container: qc.acc_obsidian_anxious_donkey
+        - /usr/bin/env sh .sqa/script.daffodil_funny_ibis.sh
+        container: qc.acc_pansy_loyal_finch
   QC.Doc:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.white_confused_lobster.sh
-        container: qc.doc_ice_frugal_dingo
+        - /usr/bin/env sh .sqa/script.goldenrod_bubbly_newt.sh
+        container: qc.doc_amethyst_frugal_groundhog
       github.com/PalomoIFCA/private-sqaaastesting git:
         commands:
-        - /usr/bin/env sh .sqa/script.peony_witty_panther.sh
-        container: qc.doc_olive_enthusiastic_roc
+        - /usr/bin/env sh .sqa/script.periwinkle_perceptive_cheetah.sh
+        container: qc.doc_cinnabar_feisty_gull
   QC.Lic:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pistachio_bright_grasshopper.sh
-        container: qc.lic_byzantium_driven_sparrow
+        - /usr/bin/env sh .sqa/script.ash_exuberant_barracuda.sh
+        container: qc.lic_iris_smart_caribou
   QC.Sec:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beige_dreamy_nighthawk.sh
-        container: qc.sec_cyan_imaginative_caribou
+        - /usr/bin/env sh .sqa/script.cherry_sociable_heron.sh
+        container: qc.sec_mauve_compassionate_chinchilla
   QC.Sty:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lilac_flexible_newt.sh
-        container: qc.sty_amethyst_ambitious_caiman
+        - /usr/bin/env sh .sqa/script.flax_compassionate_hedgehog.sh
+        container: qc.sty_wisteria_friendly_newt
   QC.Uni:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.malachite_forgiving_toucan.sh
-        container: qc.uni_walnut_melancholy_eel
+        - /usr/bin/env sh .sqa/script.lime_driven_jaguar.sh
+        container: qc.uni_heather_decisive_jackal
   QC.Ver:
     repos:
       github.com/PalomoIFCA/private-sqaaastesting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wave_romantic_kingfisher.sh
-        container: qc.ver_clementine_logical_rabbit
+        - /usr/bin/env sh .sqa/script.cinnabar_sympathetic_newt.sh
+        container: qc.ver_thunder_trustworthy_falcon
 timeout: 5400
